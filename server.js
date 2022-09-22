@@ -4,7 +4,7 @@ var server = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var dotenv = require('dotenv');
-dotenv.config();dd
+dotenv.config();
 
 var userRoutes = require('./routes/user-routes.js');
 var ProductRoutes = require('./routes/product-routes.js');
@@ -68,7 +68,7 @@ server.use(
 
 // Listen to port number
 server.listen(
-    3001,
+    process.env.PORT,
     function() {
             console.log('server running at "http://localhost:3001/" ');
     }
