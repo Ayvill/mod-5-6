@@ -42,7 +42,7 @@ server.use( bodyParser.json() );
 server.get(
     '/',
     function(req, res) {
-            res.send('<h1>Welcome to the server!<h1/>');
+            res.send('<h1>Welcome to my first server!<h1/>');
     }
     
 );
